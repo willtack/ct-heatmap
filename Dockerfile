@@ -68,7 +68,7 @@ ENV FSLOUTPUTTYPE="NIFTI_GZ"
 
 # Install workbench
 ENV WBPATH=/usr/share/workbench
-RUN    curl -ssL -o ${WBPATH}.zip "https://www.humanconnectome.org/storage/app/media/workbench/workbench-linux64-v1.4.2.zip"
+RUN    curl -ssL -o ${WBPATH}.zip "https://www.humanconnectome.org/storage/app/media/workbench/workbench-linux64-v1.5.0.zip"
 RUN    unzip ${WBPATH}.zip -d /usr/share
 ENV PATH=$WBPATH/bin_linux64:$PATH
 
